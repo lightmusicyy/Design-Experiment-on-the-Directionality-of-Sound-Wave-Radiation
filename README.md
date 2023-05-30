@@ -25,3 +25,4 @@ def equations(vars):
     return np.sqrt(eq1**2 + eq2**2)
 ```
 直接运行声学终.py文件可以得到以下弹窗
+![弹窗]([相对路径](https://github.com/lightmusicyy/Design-Experiment-on-the-Directionality-of-Sound-Wave-Radiation/blob/main/3.png))
