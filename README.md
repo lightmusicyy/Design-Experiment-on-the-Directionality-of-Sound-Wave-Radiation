@@ -20,9 +20,7 @@ def equations(vars):
     l, theta = vars
     m1 = 1
     m2 = 3
-    eq1 = l*np.sin(np.radians(theta)) - m1*V/2000/2
-    eq2 = l*np.sin(np.radians(60)-theta) - m2*V/v/2
-    return np.sqrt(eq1**2 + eq2**2)
+...
 ```
 直接运行声学update.py文件可以得到以下弹窗，输入需要的参数条件
 ![弹窗](3.png)
@@ -32,3 +30,13 @@ def equations(vars):
 ![result](4.png)
 ## 升级代码
 声学update.py，5月31日更新了窗口，使输入与输出在同一个界面，可以实现连续操作
+## 考虑存在四个点声源
+原理与上述情况相似，不做过多赘述，可直接运行声柱情况.py文件，相似的可以修改m参数在文件这一部分
+```python
+def equations(vars):
+    l, theta = vars
+    m1 = 1
+    m2 = 1
+...
+```
+请注意限制条件m不可取4的倍数
