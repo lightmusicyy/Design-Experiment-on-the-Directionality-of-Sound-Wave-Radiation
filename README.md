@@ -24,7 +24,7 @@ def equations(vars):
     eq2 = l*np.sin(np.radians(60)-theta) - m2*V/v/2
     return np.sqrt(eq1**2 + eq2**2)
 ```
-直接运行声学终.py文件可以得到以下弹窗，输入需要的参数条件
+直接运行声学update.py文件可以得到以下弹窗，输入需要的参数条件
 ![弹窗](3.png)
 
 按“OK”即可得到相关数据
