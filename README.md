@@ -30,3 +30,5 @@ def equations(vars):
 按“OK”即可得到相关数据
 
 ![result](4.png)
+## 升级代码
+声学update.py更新了窗口，使输入与输出在同一个界面，可以实现连续操作
