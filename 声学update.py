@@ -69,8 +69,8 @@ class App(tk.Tk):
                 l, theta = vars
                 m1 = 1
                 m2 = 3
-                eq1 = l*np.sin(np.rad2deg(theta)) - m1*V/2000/2
-                eq2 = l*np.sin(np.rad2deg(60)-theta) - m2*V/v/2
+                eq1 = l*np.sin(theta/180*np.pi) - m1*V/2000/2
+                eq2 = l*np.sin((60-theta)/180*np.pi) - m2*V/v/2
                 return np.sqrt(eq1**2 + eq2**2)
 
             result = minimize(equations, (l_guess, theta_guess), bounds=((0, None), (0, 60)))
