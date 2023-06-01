@@ -31,7 +31,14 @@ def equations(vars):
 ![result](4.png)
 声偶极情况相似修改方程即可
 ## 考虑存在四个点声源
-原理与上述情况相似，不做过多赘述，可直接运行声柱情况.py文件，相似的可以修改m参数在文件这一部分
+原理与上述情况相似
+$$lsin\theta=\frac{m'}{n}\lambda$$
+其中m'为除了n整数倍以外的整数，由此可列出满足条件的方程
+$$lsin\theta=\frac{m_1'}{n}\lambda$$
+$$lsin(60-\theta)=\frac{m_2'}{n}\lambda$$
+同理可将
+$\lambda=\frac{V}{f}$，
+$V=331.6+T*0.6$代入可直接运行声柱情况.py文件，相似的可以修改m参数在文件这一部分
 ```python
 def equations(vars):
     l, theta = vars
