@@ -93,4 +93,3 @@ class App(tk.Tk):
 if __name__ == "__main__":
     app = App()
     app.mainloop()
-    print(np.sin(np.radians(60)))
