@@ -1,6 +1,8 @@
-## Design-Experiment-on-the-Directionality-of-Sound-Wave-Radiation
+# Design-Experiment-on-the-Directionality-of-Sound-Wave-Radiation
+# 实验简介
 实验内容为设计一个耳机扬声器阵列，在三方处于等边三角形三个顶点是，使敌军联络员只能收到特定频率的信号，而我军联络员只能收到不同的频率信号，双方互不干扰
-## 实验原理
+# 实验原理
+## 两个同相点声源
 同相球源远场指向性问题，其中涉及的声学公式,指向性为0
 $$lsin\theta=m'\frac{\lambda}{2}$$
 其中l为可调节自定义参数，其意义为等边三角形边长，即三方距离
@@ -22,7 +24,6 @@ def equations(vars):
     m2 = 3
 ...
 ```
-## 考虑同性点声源情况
 直接运行声学update.py文件可以得到以下弹窗，输入需要的参数条件
 ![弹窗](3.png)
 
